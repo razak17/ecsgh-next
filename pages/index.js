@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Intro from '../components/Intro';
 
 export default function Home() {
   return (
@@ -10,7 +11,7 @@ export default function Home() {
           content="Internet Security Consultancy Agency"
         />
       </Head>
-      <h1>This is Home page</h1>
+      <Intro />
     </div>
   );
 }
