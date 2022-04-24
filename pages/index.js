@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Enterprise Capacity Systems</title>
+        <title>Enterprise Capacity Systems - Home</title>
         <meta
           name="description"
           content="Internet Security Consultancy Agency"
