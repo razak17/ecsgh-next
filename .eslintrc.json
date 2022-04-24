@@ -1,3 +1,13 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "no-shadow": "off",
+    "max-len": [
+      "warn",
+      {
+        "code": 80
+      }
+    ],
+    "semi": "warn"
+  }
 }
