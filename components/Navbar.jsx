@@ -7,10 +7,14 @@ const Navbar = () => {
 
   return (
     <div className={style.container}>
-      <Link href="/">ECSGH</Link>
+      <Link href="/">
+        ECSGH
+      </Link>
       <ul className={style.list}>
         <li className={style.listItem}>
-          <Link href="/">Home</Link>
+          <Link href="/">
+            Home
+            </Link>
         </li>
         <li className={style.listItem}>
           <Link href="">Services</Link>

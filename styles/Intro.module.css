@@ -46,6 +46,7 @@
 }
 
 .desc {
+  color: gray;
   font-size: 16px;
   margin: 0;
 }
@@ -53,9 +54,10 @@
 .button {
   border: none;
   background-color: #008287;
+  font-size: 16px;
   color: white;
   font-weight: bold;
-  padding: 16px 30px;
+  padding: 16px 10px;
   border-radius: 10px;
   width: 140px;
   cursor: pointer;

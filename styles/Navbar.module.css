@@ -15,9 +15,13 @@
   display: inline;
   margin-left: 60px;
   font-size: 14px;
-  color: lightgray;
-  text-decoration: none;
+  color: white;
   cursor: pointer;
+}
+
+.listItem a:hover {
+  text-decoration: none;
+  color: lightgray;
 }
 
 .hamburger {
