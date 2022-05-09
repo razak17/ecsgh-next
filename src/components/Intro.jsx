@@ -7,15 +7,18 @@ const Intro = () => {
       <Circle backgroundColor="#01c686" top="-50vh" left="-50vh" />
       <Circle backgroundColor="#01c686" right="-50vh" bottom='-59vh' />
       <div className={style.card}>
-        <h1 className={style.title}>
-          Stay On Top of the Latest Security<br />
-          Trends for your IT Infrastructure.
-        </h1>
+        <div className={style.t1}>
+          <h1 className={style.title}>
+            Stay On Top of the Latest Security Trends for your IT Infrastructure.
+          </h1>
+        </div>
         <p className={style.desc}>
           We help you learn about the latest trends in security to solve challenges<br />
           with your IT Infrastructure
         </p>
-        <button className={style.button}>Get In Touch</button>
+        <div className={style.b1}>
+          <button className={style.button}>Get In Touch</button>
+        </div>
       </div>
     </div>
   );
