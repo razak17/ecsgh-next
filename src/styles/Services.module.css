@@ -29,6 +29,11 @@
   padding: 30px 10px;
 }
 
+.service p {
+  padding-top: 10px;
+  font-size: 14px;
+}
+
 .services .service:hover {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }

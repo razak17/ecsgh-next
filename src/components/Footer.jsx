@@ -1,15 +1,13 @@
-import style from "../styles/Footer.module.css";
+import style from '../styles/Footer.module.css';
 
 const Footer = () => {
-  return (
-    <div className={style.container}>
-      <div>
-        <div className={style.cardItem}>
-          © 2022 Enterprise Capacity Systems, All Rights Reserved
-        </div>
-      </div>
-    </div>
-  );
+	return (
+		<div className={style.container}>
+			<div className={style.info}>
+				© 2022 Enterprise Capacity Systems, All Rights Reserved
+			</div>
+		</div>
+	);
 };
 
 export default Footer;

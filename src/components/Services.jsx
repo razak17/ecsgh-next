@@ -1,5 +1,6 @@
 import style from 'styles/Services.module.css';
-import Card from './Card';
+import ServiceCard from './ServiceCard';
+import {serviceItems} from './Services/Services.data';
 
 const Services = () => {
 	return (
@@ -8,10 +9,9 @@ const Services = () => {
 				<h3 className={style.title}>What We Do?</h3>
 				<h1 className={style.subtitle}>Our Services</h1>
 				<div className={style.services}>
-					<Card desc='Hello' title='Title' />
-					<Card desc='Hello' title='Title' />
-					<Card desc='Hello' title='Title' />
-					<Card desc='Hello' title='Title' />
+					{serviceItems.map(({title, description}, idx) => (
+						<ServiceCard desc={description} title={title} key={idx} />
+					))}
 				</div>
 			</div>
 		</div>

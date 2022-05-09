@@ -1,5 +1,5 @@
 import style from 'styles/Blog.module.css';
-import Card from './Card';
+import BlogCard from './BlogCard';
 
 const Blog = () => {
 	return (
@@ -7,8 +7,10 @@ const Blog = () => {
 			<div>
 				<h3 className={style.title}>Checkout Our Blog</h3>
 				<h1 className={style.subtitle}>Recent Posts</h1>
-				<div className={style.services}>
-					<Card desc='Hello' title='Title' />
+				<div className={style.card}>
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
 				</div>
 			</div>
 		</div>

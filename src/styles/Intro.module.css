@@ -64,8 +64,8 @@
 
 .button {
   border: none;
-  background-color: #008287;
-  font-size: 18px;
+	background-color: var(--primary-color);
+  font-size: 16px;
   color: white;
   font-weight: bold;
   padding: 16px 10px;
@@ -73,6 +73,9 @@
   width: 140px;
   cursor: pointer;
   animation: button 1s ease infinite alternate;
+}
+.button:hover {
+  background-color: rgba(0, 130, 135, 0.8);
 }
 
 @keyframes button {
