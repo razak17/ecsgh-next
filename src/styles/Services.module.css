@@ -26,12 +26,13 @@
 }
 
 .service {
-  padding: 30px 10px;
+  padding: 30px 20px;
 }
 
 .service p {
   padding-top: 10px;
-  font-size: 14px;
+  font-size: 12px;
+  color: #111;
 }
 
 .services .service:hover {

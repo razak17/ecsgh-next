@@ -48,7 +48,7 @@ const Contact = () => {
 						<div className={style.info_box}>
 							<div className={style.details}>
 								<h4>Email</h4>
-								<a href='mailto:anyone@example.com'>anyone@example.com</a>
+								<a href='mailto:anyone@example.com'>ecsgh@ecsgh.com</a>
 							</div>
 						</div>
 						<div className='style.info-box'>

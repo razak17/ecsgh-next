@@ -9,13 +9,11 @@ const Intro = () => {
 			<div className={style.card}>
 				<div className={style.t1}>
 					<h1 className={style.title}>
-						Stay On Top of the Latest Security Trends for your IT Infrastructure.
+						Career and Personal Development, Performance Management and Research 
 					</h1>
 				</div>
 				<p className={style.desc}>
-					We help you learn about the latest trends in security to solve challenges
-					<br />
-					with your IT Infrastructure
+					Get expert consultation on career and personal development and research.
 				</p>
 				<div className={style.b1}>
 					<button className={style.button}>Get In Touch</button>
