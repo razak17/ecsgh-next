@@ -1,6 +1,6 @@
-import style from 'styles/Services.module.css';
+import style from './Services.module.css';
 
-const Card = ({desc, title}) => {
+const Card = ({ desc, title }) => {
 	return (
 		<div className={style.service}>
 			<h2>{title}</h2>

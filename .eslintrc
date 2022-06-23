@@ -1,13 +1,17 @@
 {
 	"extends": "next/core-web-vitals",
 	"rules": {
-		"no-shadow": "off",
 		"max-len": [
-			"warn",
+			1,
 			{
-				"code": 100
+				"code": 120
 			}
 		],
-		"semi": "warn"
+		"no-shadow": 0,
+		"semi": 1,
+		// "array-element-newline": [2, "always"],
+		"array-bracket-spacing": [1, "always"],
+		"object-curly-spacing": [1, "always"],
+		"computed-property-spacing": [1, "always"]
 	}
 }

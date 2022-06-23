@@ -1,4 +1,4 @@
-import style from 'styles/Blog.module.css';
+import style from './Blog.module.css';
 
 const BlogCard = () => {
 	return (

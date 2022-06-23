@@ -1,5 +1,5 @@
 import Circle from './Circle';
-import style from '../styles/Intro.module.css';
+import style from './Intro.module.css';
 
 const Intro = () => {
 	return (
@@ -9,7 +9,7 @@ const Intro = () => {
 			<div className={style.card}>
 				<div className={style.t1}>
 					<h1 className={style.title}>
-						Career and Personal Development, Performance Management and Research 
+						Career and Personal Development, Performance Management and Research
 					</h1>
 				</div>
 				<p className={style.desc}>

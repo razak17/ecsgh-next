@@ -1,4 +1,4 @@
-import style from 'styles/Blog.module.css';
+import style from './Blog.module.css';
 import BlogCard from './BlogCard';
 
 const Blog = () => {
@@ -8,9 +8,9 @@ const Blog = () => {
 				<h3 className={style.title}>Checkout Our Blog</h3>
 				<h1 className={style.subtitle}>Recent Posts</h1>
 				<div className={style.card}>
-          <BlogCard />
-          <BlogCard />
-          <BlogCard />
+					<BlogCard />
+					<BlogCard />
+					<BlogCard />
 				</div>
 			</div>
 		</div>

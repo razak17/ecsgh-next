@@ -1,17 +1,17 @@
-import {useState} from 'react';
-import style from '../styles/Navbar.module.css';
-import {Link} from 'react-scroll';
-import {menuItems} from './Header/Header.data';
-import Logo from './Logo';
+import { useState } from 'react';
+import style from './Navbar.module.css';
+import { Link } from 'react-scroll';
+import { menuItems } from '../Header/Header.data';
+import Logo from '../Logo';
 
 const Navbar = () => {
-	const [open, setOpen] = useState(false);
+	const [ open, setOpen ] = useState(false);
 
 	return (
 		<div className={style.container}>
 			<Logo src='/' label='ECSGH' />
 			<ul className={style.list}>
-				{menuItems.map(({path, label}, idx) => (
+				{menuItems.map(({ path, label }, idx) => (
 					<li className={style.listItem} key={idx}>
 						<Link
 							activeClass='active'
@@ -34,9 +34,9 @@ const Navbar = () => {
 			<ul
 				onClick={() => setOpen(false)}
 				className={style.menu}
-				style={{right: open ? '0px' : '-50vw'}}
+				style={{ right: open ? '0px' : '-50vw' }}
 			>
-				{menuItems.map(({path, label}, idx) => (
+				{menuItems.map(({ path, label }, idx) => (
 					<li className={style.menuItem} key={idx}>
 						<Link
 							activeClass='active'
