@@ -1,21 +1,25 @@
-import style from './Services.module.css';
-import ServiceCard from './ServiceCard';
 import { serviceItems } from './Services.data';
 
+import ServiceCard from './ServiceCard';
+import Title from '../Partials/Title';
+import SubTitle from '../Partials/SubTitle';
+
+import style from './Services.module.css';
+
 const Services = () => {
-	return (
-		<div className={style.container} id='services'>
-			<div>
-				<h3 className={style.title}>What We Do?</h3>
-				<h1 className={style.subtitle}>Our Services</h1>
-				<div className={style.services}>
-					{serviceItems.map(({ title, description }, idx) => (
-						<ServiceCard desc={description} title={title} key={idx} />
-					))}
-				</div>
-			</div>
-		</div>
-	);
+  return (
+    <div className={style.container} id='services'>
+      <div>
+        <Title title='What we do' />
+        <SubTitle subTitle='Our Services' />
+        <div className={style.services}>
+          {serviceItems.map(({ title, description }, idx) => (
+            <ServiceCard desc={description} title={title} key={idx} />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Services;

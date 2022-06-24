@@ -1,12 +1,15 @@
-import style from './Blog.module.css';
 import BlogCard from './BlogCard';
+import Title from '../Partials/Title';
+import SubTitle from '../Partials/SubTitle';
+
+import style from './Blog.module.css';
 
 const Blog = () => {
 	return (
 		<div className={style.container} id='blog'>
 			<div>
-				<h3 className={style.title}>Checkout Our Blog</h3>
-				<h1 className={style.subtitle}>Recent Posts</h1>
+        <Title title='Checkout Our Blog' />
+        <SubTitle subTitle='Recent Posts' />
 				<div className={style.card}>
 					<BlogCard />
 					<BlogCard />

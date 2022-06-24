@@ -1,12 +1,12 @@
-import style from './Services.module.css';
+import Card from 'components/Partials/Card';
 
-const Card = ({ desc, title }) => {
+const ServiceCard = ({ desc, title }) => {
 	return (
-		<div className={style.service}>
+		<Card>
 			<h2>{title}</h2>
 			<p>{desc}</p>
-		</div>
+		</Card>
 	);
 };
 
-export default Card;
+export default ServiceCard;

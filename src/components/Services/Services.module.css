@@ -1,20 +1,6 @@
 /* SERVICES PAGE */
 .container {
-  padding: 50px 100px;
-}
-
-.title {
-  width: max-content;
-  font-size: 22px;
-  border-bottom: 4px solid var(--primary-color);
-  text-transform: uppercase;
-  color: rgb(3, 3, 3);
-}
-
-.subtitle {
-  padding-top: 20px;
-  font-size: 42px;
-  color: rgb(0, 130, 135);
+  padding: 70px 100px;
 }
 
 .services {
