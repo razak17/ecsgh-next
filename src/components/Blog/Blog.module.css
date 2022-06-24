@@ -1,15 +1,7 @@
-.container {
-  padding: 70px 100px;
-}
-
-.card {
+.card_row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   /* text-align: center; */
   padding-top: 20px;
-}
-
-.card {
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }

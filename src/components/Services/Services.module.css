@@ -1,8 +1,4 @@
 /* SERVICES PAGE */
-.container {
-  padding: 70px 100px;
-}
-
 .services {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
