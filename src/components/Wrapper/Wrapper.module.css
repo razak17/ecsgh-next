@@ -1,34 +1,39 @@
+/* AppWrap */
 .container {
   padding: 70px 100px;
 }
 
-/* SERVICES PAGE */
-.services {
+@media (max-width: 1068px) {
+	.container {
+		padding: 70px 40px;
+	}
+}
+
+/* CardWrap */
+.card_wrap {
   display: grid;
-    grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
   gap: 40px;
   text-align: center;
   padding-top: 20px;
 }
 
-.services .service:hover {
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+.card_wrap_blog {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  text-align: left;
+  padding-top: 20px;
 }
 
 @media (min-width: 658px) {
-  .services {
+  .card_wrap, .card_wrap_blog {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 1068px) {
-  .services {
+  .card_wrap, .card_wrap_blog {
   grid-template-columns: repeat(3, 1fr);
   }
-}
-
-@media (max-width: 1068px) {
-	.container {
-		padding: 100px 40px;
-	}
 }

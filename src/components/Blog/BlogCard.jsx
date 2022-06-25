@@ -1,9 +1,9 @@
 import Card from 'components/Partials/Card';
 
-const BlogCard = ({ title, excerpt }) => {
+const BlogCard = ({ title, excerpt, date }) => {
 	return (
 		<Card>
-			<span>25th May 2022</span>
+			<span>{date}</span>
 			<h2>{title}</h2>
 			<p>{excerpt}</p>
 			<button>Read More</button>

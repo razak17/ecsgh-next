@@ -16,35 +16,35 @@
 }
 
 /* Card */
-.service {
+.card {
 	padding: 30px;
 }
 
-.service:hover {
+.card:hover {
 	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-.service button:hover {
+.card button:hover {
 	background-color: rgba(0, 130, 135, 0.8);
 }
 
-.service p,
-.service h2 {
+.card p,
+.card h2 {
 	padding-top: 10px;
 }
 
-.service p {
+.card p {
 	padding-top: 10px;
 	font-size: 12px;
 	color: #111;
 }
 
-.service span {
+.card span {
 	font-size: 12px;
 	color: gray;
 }
 
-.service button {
+.card button {
 	border: none;
 	width: 100%;
 	margin-top: 20px;
@@ -56,19 +56,19 @@
 	animation: button 1s ease infinite alternate;
 }
 
-.service h2 {
+.card h2 {
 	font-size: 24px;
 	font-weight: 500;
 	margin-top: 20px;
 	color: var(--secondary-color);
 }
 
-.service .icon img {
+.card .icon img {
 	max-width: 100px;
 }
 
-@media (max-width: 768px) {
-	.service {
+@media (max-width: 658px) {
+	.card {
 		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 	}
 }
