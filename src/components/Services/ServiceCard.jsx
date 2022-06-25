@@ -1,4 +1,4 @@
-import Card from 'components/Partials/Card';
+import Card from '../Partials/Card';
 
 const ServiceCard = ({ desc, title }) => {
 	return (

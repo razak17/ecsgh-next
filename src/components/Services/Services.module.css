@@ -7,38 +7,13 @@
   padding-top: 20px;
 }
 
-.service {
-  padding: 30px 20px;
-}
-
-.service p {
-  padding-top: 10px;
-  font-size: 12px;
-  color: #111;
-}
-
 .services .service:hover {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-.services .service h2 {
-  font-size: 24px;
-  font-weight: 500;
-  margin-top: 20px;
-  color: var(--secondary-color);
-}
-
-.services .service .icon img {
-  max-width: 100px;
-}
-
-@media (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .services {
     grid-template-columns: 1fr;
-  }
-
-  .services .service {
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   }
 }
 
