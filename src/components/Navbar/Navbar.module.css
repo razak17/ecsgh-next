@@ -81,3 +81,9 @@
     justify-content: space-around;
   }
 }
+
+@media (max-width: 1068px) {
+	.container {
+		padding: 0px 40px;
+	}
+}
