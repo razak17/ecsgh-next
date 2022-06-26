@@ -3,7 +3,7 @@ import { SEO, Intro, Services, Blog, Contact } from '../components';
 const Home = () => {
 	return (
 		<div>
-			<SEO title='ECSGH Landing Page' />
+			<SEO />
 			<Intro />
 			<Services />
 			<Blog />
