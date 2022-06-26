@@ -2,7 +2,7 @@
 .contact {
 	position: relative;
 	width: 100%;
-	margin-top: 50px;
+	padding-top: 20px;
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
@@ -10,7 +10,7 @@
 
 .contact_form {
 	position: relative;
-	background: #f9f9f9;
+  border: 1px solid #f9f9f9;
 	width: calc(100% - 400px);
 	padding: 30px 30px 20px;
 }
@@ -37,13 +37,13 @@
 .contact_form .row input,
 .contact_form .row textarea {
 	position: relative;
-	border: 1px solid rgba(0, 0, 0, 0.2);
+	border: 1px solid rgba(0, 0, 0, 0.1);
 	color: #000;
 	background: transparent;
 	width: 100%;
 	padding: 10px;
 	outline: none;
-	font-size: 16px;
+	font-size: 1.2rem;
 	font-weight: 400;
 	margin: 10px 0;
 	resize: none;
@@ -57,17 +57,16 @@
 	background-color: var(--primary-color);
 	color: #fff;
 	margin: 0;
-	text-transform: uppercase;
-	letter-spacing: 2px;
 	font-weight: 500;
+	font-size: 1.4rem;
 	border: 0;
 	cursor: pointer;
 }
 
 .contact_info {
 	width: 350px;
-	background: #f9f9f9;
 	padding: 40px 40px 20px;
+  border: 1px solid #f9f9f9;
 }
 
 .contact_info .info_box {
@@ -112,16 +111,14 @@
 	.contact_info {
 		/* display: none; */
 		width: 100%;
-    margin-top: 20px;
-    padding: 30px 30px 20px;
+		margin-top: 20px;
+		padding: 30px 30px 20px;
 	}
 
 	.contact_form .row input[type='submit'] {
 		margin: 0;
-		text-transform: uppercase;
-		letter-spacing: 2px;
 		font-weight: 400;
-    font-size: 14px;
+		font-size: 14px;
 		border: 0;
 		cursor: pointer;
 	}

@@ -1,7 +1,7 @@
 /* Title */
 .title {
 	width: max-content;
-  max-lines: 2;
+	max-lines: 2;
 	font-size: 22px;
 	border-bottom: 4px solid var(--primary-color);
 	text-transform: uppercase;
@@ -9,32 +9,30 @@
 }
 
 .logo {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 /* Subtitle */
 .subtitle {
 	padding-top: 20px;
 	font-size: 42px;
-	color: rgb(0, 130, 135);
+	color: var(--primary-color);
 }
 
 /* Card */
 .card {
-	padding: 30px;
+	padding: 40px;
+  border: 1px solid #f9f9f9;
 }
 
 .card:hover {
 	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-.card button:hover {
-	background-color: rgba(0, 130, 135, 0.8);
-}
-
-.card p,
 .card h2 {
-	padding-top: 10px;
+	font-size: 24px;
+	font-weight: 500;
+	color: var(--secondary-color);
 }
 
 .card p {
@@ -53,18 +51,16 @@
 	width: 100%;
 	margin-top: 20px;
 	padding: 10px 0;
-	background-color: #008287;
+	/* background-color: #008287; */
+	background-color: var(--primary-color);
 	color: white;
-	font-size: 18px;
+	font-size: 1.4rem;
 	cursor: pointer;
 	animation: button 1s ease infinite alternate;
 }
 
-.card h2 {
-	font-size: 24px;
-	font-weight: 500;
-	margin-top: 20px;
-	color: var(--secondary-color);
+.card button:hover {
+	background-color: rgba(0, 130, 135, 0.8);
 }
 
 .card .icon img {

@@ -1,4 +1,4 @@
-import { Intro, Services, Blog, Contact } from '../components/Layout';
+import { Intro, Services, Blog, Contact, About } from '../components/Layout';
 import SEO from '../components/Layout/PrimaryLayout/SEO';
 
 const Home = () => {
@@ -6,6 +6,7 @@ const Home = () => {
 		<>
 			<SEO />
 			<Intro />
+			<About />
 			<Services />
 			<Blog />
 			<Contact />

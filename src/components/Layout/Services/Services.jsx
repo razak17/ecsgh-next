@@ -14,7 +14,7 @@ const Services = () => {
 			<SubTitle subTitle='Our Services' />
 			<CardWrap>
 				{serviceItems.map(({ title, description }, idx) => (
-					<ServiceCard desc={description} title={title} key={idx} />
+					<ServiceCard title={title} key={idx} />
 				))}
 			</CardWrap>
 		</>
