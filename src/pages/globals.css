@@ -4,6 +4,7 @@
 	--primary-color: #008287;
 	--secondary-color: #1e2127;
 	--dark-green: #01c686;
+	--light-gray: #777;
 }
 * {
 	box-sizing: border-box;
