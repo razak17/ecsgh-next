@@ -25,17 +25,6 @@
 	z-index: 999;
 }
 
-.circle1 {
-	background-color: var(--primary-color);
-	right: -40vh;
-}
-
-.circle2 {
-	background-color: #b0ff49;
-	left: -50vh;
-	top: -50vh;
-}
-
 .t1 {
 	width: 65%;
 }
