@@ -12,7 +12,7 @@ const Navbar = () => {
 	return (
 		<div className={style.container}>
 			<Logo to='intro' label='ECSGH' />
-			<ul className={style.list}>
+			<ul>
 				{menuItems.map(({ path, label }, index) => (
 					<li className={style.list_item} key={index}>
 						<LinkItem to={path} label={label} key={index} />

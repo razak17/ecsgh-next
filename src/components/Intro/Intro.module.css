@@ -77,40 +77,35 @@
 	.container {
 		flex-direction: column;
 	}
-
 	.circle1 {
 		right: -50vh;
 		bottom: -50vh;
 	}
-
 	.card {
 		padding: 20px 50px;
-		align-items: center;
-		text-align: center;
 		justify-content: space-between;
 	}
-
 	.title {
-		font-size: 30px;
+		font-size: 38px;
+	margin-bottom: 20px;
 	}
 }
 @media (max-width: 768px) {
 	.card {
 		padding: 20px 30px;
 	}
-	.title {
-		font-size: 36px;
-		margin: 70px 0px 0px 0px;
-	}
 	.b1 {
-		padding-top: 10px;
+		padding-top: 20px;
 	}
 	.desc {
 		width: 80%;
 	}
+	.t1 {
+		width: 100%;
+	}
 }
 
-@media (max-width: 1068px) {
+@media (max-width: 1024px) {
 	.t1 {
 		width: 85%;
 	}
