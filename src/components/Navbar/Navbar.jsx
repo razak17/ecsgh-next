@@ -2,30 +2,24 @@ import { useState } from 'react';
 import style from './Navbar.module.css';
 import { Link } from 'react-scroll';
 import { menuItems } from '../Header/Header.data';
-import Logo from '../Logo';
+import Logo from '../Partials/Logo';
+import LinkItem from 'components/Partials/LinkItem';
 
 const Navbar = () => {
 	const [ open, setOpen ] = useState(false);
 
 	return (
 		<div className={style.container}>
-			<Logo src='/' label='ECSGH' />
+			<Logo to='intro' label='ECSGH' />
 			<ul className={style.list}>
 				{menuItems.map(({ path, label }, index) => (
 					<li className={style.listItem} key={index}>
-						<Link
-							activeClass='active'
-							to={path}
-							spy={true}
-							smooth={true}
-							duration={500}
-							key={index}
-						>
-							{label}
-						</Link>
+						<LinkItem to={path} label={label} key={index} />
 					</li>
 				))}
 			</ul>
+
+			{/* Hamburger Menu */}
 			<div className={style.hamburger} onClick={() => setOpen(!open)}>
 				<div className={style.line} />
 				<div className={style.line} />
@@ -38,17 +32,7 @@ const Navbar = () => {
 			>
 				{menuItems.map(({ path, label }, index) => (
 					<li className={style.menuItem} key={index}>
-						<Link
-							activeClass='active'
-							to={path}
-							spy={true}
-							smooth={true}
-							offset={-70}
-							duration={500}
-							key={index}
-						>
-							{label}
-						</Link>
+						<LinkItem to={path} label={label} key={index} />
 					</li>
 				))}
 			</ul>

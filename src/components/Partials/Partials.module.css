@@ -8,6 +8,10 @@
 	color: rgb(3, 3, 3);
 }
 
+.logo {
+  cursor: pointer;
+}
+
 /* Subtitle */
 .subtitle {
 	padding-top: 20px;

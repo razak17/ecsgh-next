@@ -5,7 +5,6 @@ import Intro from './Intro/Intro';
 import Navbar from './Navbar/Navbar';
 import Services from './Services/Services';
 import Layout from './Layout';
-import Logo from './Logo';
 import SEO from './SEO';
 
 export {
@@ -16,6 +15,5 @@ export {
 	Navbar,
 	Services,
 	Layout,
-	Logo,
 	SEO,
 };
