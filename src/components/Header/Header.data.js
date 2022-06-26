@@ -1,6 +1,6 @@
 export const menuItems = [
   {
-    path: 'home',
+    path: '/',
     label: 'Home',
   },
   {

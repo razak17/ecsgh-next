@@ -11,15 +11,15 @@ const Navbar = () => {
 		<div className={style.container}>
 			<Logo src='/' label='ECSGH' />
 			<ul className={style.list}>
-				{menuItems.map(({ path, label }, idx) => (
-					<li className={style.listItem} key={idx}>
+				{menuItems.map(({ path, label }, index) => (
+					<li className={style.listItem} key={index}>
 						<Link
 							activeClass='active'
 							to={path}
 							spy={true}
 							smooth={true}
 							duration={500}
-							key={idx}
+							key={index}
 						>
 							{label}
 						</Link>
@@ -36,8 +36,8 @@ const Navbar = () => {
 				className={style.menu}
 				style={{ right: open ? '0px' : '-50vw' }}
 			>
-				{menuItems.map(({ path, label }, idx) => (
-					<li className={style.menuItem} key={idx}>
+				{menuItems.map(({ path, label }, index) => (
+					<li className={style.menuItem} key={index}>
 						<Link
 							activeClass='active'
 							to={path}
@@ -45,7 +45,7 @@ const Navbar = () => {
 							smooth={true}
 							offset={-70}
 							duration={500}
-							key={idx}
+							key={index}
 						>
 							{label}
 						</Link>

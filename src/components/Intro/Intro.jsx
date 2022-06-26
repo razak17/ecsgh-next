@@ -3,7 +3,7 @@ import style from './Intro.module.css';
 
 const Intro = () => {
 	return (
-		<div className={style.container} id='intro'>
+		<div id='intro' className={style.container}>
 			<Circle backgroundColor='#01c686' top='-50vh' left='-50vh' />
 			<Circle backgroundColor='#01c686' right='-50vh' bottom='-59vh' />
 			<div className={style.card}>

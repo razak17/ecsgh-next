@@ -22,11 +22,7 @@
 	.container {
 		height: auto;
 		flex-direction: column;
-		padding: 14px 0px;
-	}
-
-	.info {
-		font-size: 12px;
+		padding: 14px 30px;
 	}
 
 	.cardItem {
