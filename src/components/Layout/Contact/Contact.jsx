@@ -1,6 +1,6 @@
-import Title from '../Partials/Title';
-import SubTitle from '../Partials/SubTitle';
-import AppWrap from 'components/Wrapper/AppWrap';
+import Title from '../../Partials/Title';
+import SubTitle from '../../Partials/SubTitle';
+import AppWrap from '../../Wrapper/AppWrap';
 
 import style from './Contact.module.css';
 

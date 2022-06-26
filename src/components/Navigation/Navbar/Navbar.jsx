@@ -2,9 +2,9 @@ import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 import style from './Navbar.module.css';
-import { menuItems } from '../Header/Header.data';
-import Logo from '../Partials/Logo';
-import LinkItem from 'components/Partials/LinkItem';
+import { menuItems } from './Navbar.data';
+import Logo from '../../Partials/Logo';
+import LinkItem from '../../Partials/LinkItem';
 
 const Navbar = () => {
 	const [ open, setOpen ] = useState(false);

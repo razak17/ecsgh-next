@@ -1,14 +1,15 @@
-import { SEO, Intro, Services, Blog, Contact } from '../components';
+import { Intro, Services, Blog, Contact } from '../components/Layout';
+import SEO from '../components/Layout/PrimaryLayout/SEO';
 
 const Home = () => {
 	return (
-		<div>
+		<>
 			<SEO />
 			<Intro />
 			<Services />
 			<Blog />
 			<Contact />
-		</div>
+		</>
 	);
 };
 

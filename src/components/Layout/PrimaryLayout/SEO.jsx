@@ -5,7 +5,7 @@ const SEO = ({
 	description = 'ECSGH landing page',
 	author = 'ECSGH',
 	meta,
-	title = 'ECSGH landing title',
+	title = 'ECSGH Landing Page',
 }) => {
 	const metaData = [
 		{

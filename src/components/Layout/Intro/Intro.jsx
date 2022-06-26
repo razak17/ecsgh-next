@@ -1,4 +1,4 @@
-import Circle from '../Partials/Circle';
+import Circle from '../../Partials/Circle';
 import style from './Intro.module.css';
 
 const Intro = () => {

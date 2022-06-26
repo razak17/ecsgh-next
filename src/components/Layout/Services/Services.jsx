@@ -1,9 +1,9 @@
 import { serviceItems } from './Services.data';
 
 import ServiceCard from './ServiceCard';
-import Title from '../Partials/Title';
-import SubTitle from '../Partials/SubTitle';
-import AppWrap from '../Wrapper/AppWrap';
+import Title from '../../Partials/Title';
+import SubTitle from '../../Partials/SubTitle';
+import AppWrap from '../../Wrapper/AppWrap';
 
 import CardWrap from 'components/Wrapper/CardWrap';
 
