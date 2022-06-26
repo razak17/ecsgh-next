@@ -12,7 +12,7 @@
 	position: relative;
 	background: #f9f9f9;
 	width: calc(100% - 400px);
-	padding: 0px 40px;
+	padding: 30px 30px 20px;
 }
 
 .contact_form form {
@@ -88,4 +88,41 @@
 .contact_info .info_box .details p,
 .contact_info .info_box .details a {
 	color: #111;
+}
+
+@media (max-width: 1068px) {
+	.contact {
+		flex-direction: column;
+	}
+	.contact_form {
+		width: 100%;
+		padding: 20px 0px 20px;
+	}
+
+	.contact_form .row {
+		flex-direction: column;
+	}
+
+	.contact_form .input50,
+	.contact_form .input100 {
+		width: 100%;
+		margin: 0;
+	}
+
+	.contact_info {
+		/* display: none; */
+		width: 100%;
+    margin-top: 20px;
+    padding: 30px 30px 20px;
+	}
+
+	.contact_form .row input[type='submit'] {
+		margin: 0;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-weight: 400;
+    font-size: 14px;
+		border: 0;
+		cursor: pointer;
+	}
 }

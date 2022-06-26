@@ -7,6 +7,7 @@ const Home = () => {
 			<Intro />
 			<Services />
 			<Blog />
+			<Contact />
 		</div>
 	);
 };

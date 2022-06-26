@@ -57,7 +57,7 @@ const Contact = () => {
 					<div className='style.info-box'>
 						<div className='style.details'>
 							<h4>Phone number</h4>
-							<p>+1 978 555 5555</p>
+              <a href="tel:+19784444444">+1 978 555 4444</a>
 						</div>
 					</div>
 				</div>
