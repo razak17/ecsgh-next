@@ -10,7 +10,7 @@
 
 .contact_form {
 	position: relative;
-  border: 1px solid #f9f9f9;
+	border: 1px solid #f9f9f9;
 	width: calc(100% - 400px);
 	padding: 30px 30px 20px;
 }
@@ -66,7 +66,7 @@
 .contact_info {
 	width: 350px;
 	padding: 40px 40px 20px;
-  border: 1px solid #f9f9f9;
+	border: 1px solid #f9f9f9;
 }
 
 .contact_info .info_box {
@@ -87,6 +87,23 @@
 .contact_info .info_box .details p,
 .contact_info .info_box .details a {
 	color: #111;
+}
+
+.row button {
+	border: none;
+	width: 100%;
+	margin-top: 0.8rem;
+	padding: 10px 0;
+	/* background-color: #008287; */
+	background-color: var(--primary-color);
+	color: white;
+	font-size: 1.2rem;
+	cursor: pointer;
+	animation: button 1s ease infinite alternate;
+}
+
+.row button:hover {
+	background-color: rgba(0, 130, 135, 0.8);
 }
 
 @media (max-width: 1024px) {
