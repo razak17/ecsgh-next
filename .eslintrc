@@ -8,6 +8,7 @@
 			}
 		],
 		"no-shadow": 0,
+		"no-console": 1,
 		"semi": 1,
 		// "array-element-newline": [2, "always"],
 		"array-bracket-spacing": [1, "always"],

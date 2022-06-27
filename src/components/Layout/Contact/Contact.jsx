@@ -30,8 +30,8 @@ const Contact = () => {
 
 		emailjs
 			.send(
-				'service_ecsgh',
-				'template_ecsgh',
+				process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+				process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
 				{
 					first_name,
 					last_name,
@@ -39,7 +39,7 @@ const Contact = () => {
 					subject,
 					message,
 				},
-				'HmrC75Jr4au543Xni'
+				process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY,
 			)
 			.then(
 				res => {
