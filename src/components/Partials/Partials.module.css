@@ -22,7 +22,7 @@
 /* Card */
 .card {
 	padding: 40px;
-  border: 1px solid #f9f9f9;
+	border: 1px solid #f9f9f9;
 }
 
 .card:hover {
@@ -30,12 +30,12 @@
 }
 
 .card div {
-  padding: 1rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: gray;
-  font-size: 1rem;
+	padding: 1rem 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: gray;
+	font-size: 1rem;
 }
 
 .card h2 {
@@ -47,7 +47,7 @@
 .card p {
 	padding: 1rem 0;
 	font-size: 1.2rem;
-	color: var(--light-gray)
+	color: var(--light-gray);
 }
 
 .card span {
@@ -77,8 +77,70 @@
 	max-width: 100px;
 }
 
+/* InputField */
+
+.input50 {
+	width: 50%;
+	margin: 0 10px;
+}
+
+.input100 {
+	width: 100%;
+	margin: 0 10px;
+}
+
+.input50 input,
+.input100 textarea {
+	position: relative;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	color: #000;
+	background: transparent;
+	width: 100%;
+	padding: 10px;
+	outline: none;
+	font-size: 1.2rem;
+	font-weight: 400;
+	margin: 10px 0;
+	resize: none;
+}
+
+.input100 textarea {
+	height: 150px;
+}
+
+.submit {
+	border: none;
+	width: 100%;
+	margin-top: 0.8rem;
+	padding: 10px 0;
+	/* background-color: #008287; */
+	background-color: var(--primary-color);
+	color: #fff;
+	font-size: 1.2rem;
+	cursor: pointer;
+	font-weight: 500;
+	animation: button 1s ease infinite alternate;
+}
+
+/* Media queries */
 @media (max-width: 658px) {
 	.card {
 		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+	}
+}
+
+@media (max-width: 1024px) {
+	.input50,
+	.input100 {
+		width: 100%;
+		margin: 0;
+	}
+
+	.submit {
+		margin: 0;
+		font-weight: 400;
+		font-size: 1.2rem;
+		border: 0;
+		cursor: pointer;
 	}
 }

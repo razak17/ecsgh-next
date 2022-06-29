@@ -7,6 +7,7 @@ import AppWrap from '../../Wrapper/AppWrap';
 
 import style from './Contact.module.css';
 import ContactInfo from './ContactInfo';
+import InputField from 'components/Partials/InputField';
 
 const Contact = () => {
 	const [ formData, setFormData ] = useState({
@@ -70,63 +71,53 @@ const Contact = () => {
 				<div className={style.contact_form}>
 					<form onSubmit={handleSubmit}>
 						<div className={style.row}>
-							<div className={style.input50}>
-								<input
-									type='text'
-									name='first_name'
-									placeholder='First Name'
-									value={formData.first_name}
-									onChange={handleChangeInput}
-								/>
-							</div>
-							<div className={style.input50}>
-								<input
-									type='text'
-									name='last_name'
-									placeholder='Last Name'
-									value={formData.last_name}
-									onChange={handleChangeInput}
-								/>
-							</div>
+							<InputField
+								type='text'
+								name='first_name'
+								placeholder='First Name'
+								value={formData.first_name}
+								onChange={handleChangeInput}
+							/>
+							<InputField
+								type='text'
+								name='last_name'
+								placeholder='Last Name'
+								value={formData.last_name}
+								onChange={handleChangeInput}
+							/>
 						</div>
 						<div className={style.row}>
-							<div className={style.input50}>
-								<input
-									type='text'
-									name='email'
-									placeholder='Email'
-									value={formData.email}
-									onChange={handleChangeInput}
-								/>
-							</div>
-							<div className={style.input50}>
-								<input
-									type='text'
-									name='subject'
-									placeholder='Subject'
-									value={formData.subject}
-									onChange={handleChangeInput}
-								/>
-							</div>
+							<InputField
+								type='text'
+								name='email'
+								placeholder='Email'
+								value={formData.email}
+								onChange={handleChangeInput}
+							/>
+							<InputField
+								type='text'
+								name='subject'
+								placeholder='Subject'
+								value={formData.subject}
+								onChange={handleChangeInput}
+							/>
 						</div>
 						<div className={style.row}>
-							<div className={style.input100}>
-								<textarea
-									name='message'
-									placeholder='Message'
-									value={formData.message}
-									onChange={handleChangeInput}
-								></textarea>
-							</div>
+							<InputField
+								name='message'
+								placeholder='Message'
+								value={formData.message}
+								onChange={handleChangeInput}
+								textArea
+							/>
 						</div>
 						<div className={style.row}>
-							<div className={style.input100}>
-								<input
-									disabled={loading ? true : false}
-									type='submit'
-									value={loading ? 'Sending' : 'Send Message'}
-								/>
-							</div>
+							<InputField
+                type='submit'
+								disabled={loading ? true : false}
+								value={loading ? 'Sending' : 'Send Message'}
+                button
+							/>
 						</div>
 					</form>
 				</div>
