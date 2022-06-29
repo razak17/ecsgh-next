@@ -6,6 +6,7 @@ import SubTitle from '../../Partials/SubTitle';
 import AppWrap from '../../Wrapper/AppWrap';
 
 import style from './Contact.module.css';
+import ContactInfo from './ContactInfo';
 
 const Contact = () => {
 	const [ formData, setFormData ] = useState({
@@ -25,6 +26,8 @@ const Contact = () => {
 	const handleSubmit = e => {
 		e.preventDefault();
 
+		setLoading(true);
+
 		// console.log(formData);
 		const { first_name, last_name, email, subject, message } = formData;
 
@@ -39,10 +42,11 @@ const Contact = () => {
 					subject,
 					message,
 				},
-				process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY,
+				process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
 			)
 			.then(
 				res => {
+					setLoading(false);
 					console.log(res.text);
 					setFormData({
 						first_name: '',
@@ -117,32 +121,17 @@ const Contact = () => {
 						</div>
 						<div className={style.row}>
 							<div className={style.input100}>
-								<input type='submit' value={loading ? 'Sending' : 'Send Message'} />
+								<input
+									disabled={loading ? true : false}
+									type='submit'
+									value={loading ? 'Sending' : 'Send Message'}
+								/>
 							</div>
 						</div>
 					</form>
 				</div>
 
-				<div className={style.contact_info}>
-					<div className={style.info_box}>
-						<div className={style.details}>
-							<h4>Address</h4>
-							<p>28 Neon Tower, New York City, USA</p>
-						</div>
-					</div>
-					<div className={style.info_box}>
-						<div className={style.details}>
-							<h4>Email</h4>
-							<a href='mailto:anyone@example.com'>ecsgh@ecsgh.com</a>
-						</div>
-					</div>
-					<div className='style.info-box'>
-						<div className='style.details'>
-							<h4>Phone number</h4>
-							<a href='tel:+19784444444'>+1 978 555 4444</a>
-						</div>
-					</div>
-				</div>
+				<ContactInfo />
 			</div>
 		</>
 	);
