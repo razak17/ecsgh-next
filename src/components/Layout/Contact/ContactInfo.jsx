@@ -6,7 +6,7 @@ const ContactInfo = () => {
 			<div className={style.info_box}>
 				<div className={style.details}>
 					<h4>Address</h4>
-					<p>28 Neon Tower, New York City, USA</p>
+					<p>Greater Accra, Accra</p>
 				</div>
 			</div>
 			<div className={style.info_box}>

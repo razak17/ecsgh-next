@@ -17,7 +17,11 @@ const Intro = () => {
 					Get expert consultation on career and personal development and research.
 				</p>
 				<div className={style.b1}>
-					<Button small={true} label="Get In Touch" />
+					<Button
+						onClick={() => window.location.replace('/#contact')}
+						small={true}
+						label='Get In Touch'
+					/>
 				</div>
 			</div>
 		</div>

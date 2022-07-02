@@ -50,6 +50,10 @@
 	color: #111;
 }
 
+.details p, .details a {
+  font-size: 1rem;
+}
+
 .row button:hover {
 	background-color: rgba(0, 130, 135, 0.8);
 }
