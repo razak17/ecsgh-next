@@ -1,3 +1,4 @@
+import Button from '../../Partials/Button';
 import Circle from '../../Partials/Circle';
 import style from './Intro.module.css';
 
@@ -16,7 +17,7 @@ const Intro = () => {
 					Get expert consultation on career and personal development and research.
 				</p>
 				<div className={style.b1}>
-					<button className={style.button}>Get In Touch</button>
+					<Button small={true} label="Get In Touch" />
 				</div>
 			</div>
 		</div>

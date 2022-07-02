@@ -125,18 +125,38 @@
 .input100 textarea:invalid[focused='true'] ~ span {
 	display: block;
 }
-.submit {
+
+/* Button */
+.button,
+.button_small {
 	border: none;
+	border-radius: 4px;
 	width: 100%;
 	margin-top: 0.8rem;
-	padding: 10px 0;
-	/* background-color: #008287; */
+	padding: 1rem 0;
 	background-color: var(--primary-color);
 	color: #fff;
 	font-size: 1.2rem;
 	cursor: pointer;
 	font-weight: 500;
 	animation: button 1s ease infinite alternate;
+}
+
+.button_small {
+	height: 50px;
+	font-weight: bold;
+	padding: 1.4rem 1rem;
+	width: 140px;
+}
+
+.button_small:hover {
+	background-color: rgba(0, 130, 135, 0.8);
+}
+
+@keyframes button {
+	to {
+		background-color: rgb(0, 120, 125);
+	}
 }
 
 /* Media queries */

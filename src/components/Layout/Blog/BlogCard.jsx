@@ -1,4 +1,5 @@
 import Card from 'components/Partials/Card';
+import Button from '../../Partials/Button';
 
 const BlogCard = ({ title, excerpt, date, author }) => {
 	return (
@@ -9,7 +10,7 @@ const BlogCard = ({ title, excerpt, date, author }) => {
 				<a href='#'>{author}</a>
 			</div>
 			<p>{excerpt}</p>
-			<button>Read More</button>
+			<Button label='Read More' />
 		</Card>
 	);
 };

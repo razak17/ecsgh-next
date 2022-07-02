@@ -21,8 +21,6 @@ const InputField = props => {
 				<span>{errorMessage}</span>
 			</div>
 		);
-	} else if (button) {
-		return <input {...inputProps} className={style.submit} />;
 	} else {
 		return (
 			<div className={style.input50}>

@@ -1,14 +1,15 @@
 import { useState } from 'react';
 import { validateInput } from './Contact.validation';
+import { sendEmail } from '../../../api';
 
+import ContactInfo from './ContactInfo';
 import Title from '../../Partials/Title';
 import SubTitle from '../../Partials/SubTitle';
 import AppWrap from '../../Wrapper/AppWrap';
+import Button from '../../Partials/Button';
+import InputField from '../../Partials/InputField';
 
 import style from './Contact.module.css';
-import ContactInfo from './ContactInfo';
-import InputField from 'components/Partials/InputField';
-import { sendEmail } from 'api';
 
 const Contact = () => {
 	const [ formData, setFormData ] = useState({
@@ -28,7 +29,7 @@ const Contact = () => {
 	const handleSubmit = e => {
 		e.preventDefault();
 
-    console.log(formData);
+		console.log(formData);
 		setLoading(true);
 		sendEmail(formData);
 		setLoading(false);
@@ -95,11 +96,9 @@ const Contact = () => {
 							/>
 						</div>
 						<div className={style.row}>
-							<InputField
-								type='submit'
+							<Button
 								disabled={loading ? true : false}
-								value={loading ? 'Sending' : 'Send Message'}
-								button
+								label={loading ? 'Sending' : 'Send Message'}
 							/>
 						</div>
 					</form>
