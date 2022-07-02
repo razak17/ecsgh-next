@@ -1,36 +1,38 @@
+import { useState } from 'react';
 import style from './Partials.module.css';
 
-const InputField = ({ name, placeholder, value, onChange, textArea, button, disabled }) => {
+const InputField = props => {
+	const [ focused, setFocused ] = useState(false);
+	const { onChange, textArea, button, errorMessage, id, ...inputProps } = props;
+
+	const handleFocus = () => {
+		setFocused(true);
+	};
+
 	if (textArea) {
 		return (
 			<div className={style.input100}>
 				<textarea
-					name={name}
-					placeholder={placeholder}
-					value={value}
+					{...inputProps}
+					onBlur={handleFocus}
 					onChange={onChange}
+					focused={focused.toString()}
 				></textarea>
+				<span>{errorMessage}</span>
 			</div>
 		);
 	} else if (button) {
-		return (
-			<input
-        className={style.submit}
-				disabled={disabled}
-				type='submit'
-				value={value}
-			/>
-		);
+		return <input {...inputProps} className={style.submit} />;
 	} else {
 		return (
 			<div className={style.input50}>
 				<input
-					type='text'
-					name={name}
-					placeholder={placeholder}
-					value={value}
+					{...inputProps}
+					onBlur={handleFocus}
 					onChange={onChange}
+					focused={focused.toString()}
 				/>
+				<span>{errorMessage}</span>
 			</div>
 		);
 	}

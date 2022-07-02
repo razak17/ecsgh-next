@@ -108,6 +108,23 @@
 	height: 150px;
 }
 
+.input100 span,
+.input50 span {
+	font-size: 12px;
+	padding: 3px;
+	color: red;
+	display: none;
+}
+
+.input50 input:invalid[focused='true'],
+.input100 textarea:invalid[focused='true'] {
+	border: 1px solid red;
+}
+
+.input50 input:invalid[focused='true'] ~ span,
+.input100 textarea:invalid[focused='true'] ~ span {
+	display: block;
+}
 .submit {
 	border: none;
 	width: 100%;
