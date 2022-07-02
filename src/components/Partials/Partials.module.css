@@ -39,21 +39,21 @@
 }
 
 .card h2 {
-	font-size: 1.6rem;
+	font-size: 1.2rem;
 	font-weight: 500;
 	color: var(--secondary-color);
 }
 
 .card p {
-	padding: 1rem 0;
-	font-size: 1rem;
+	padding: 0.6rem 0;
+	font-size: 0.9rem;
 	color: var(--light-gray);
 }
 
 .card a {
-	font-size: 1rem;
+	font-size: 0.8rem;
 	color: gray;
-	margin-top: 20px;
+	margin-top: 10px;
 }
 
 .card a:hover {
@@ -85,7 +85,7 @@
 	width: 100%;
 	padding: 10px;
 	outline: none;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	font-weight: 400;
 	margin: 10px 0;
 	resize: none;
@@ -120,23 +120,23 @@
 	border-radius: 4px;
 	width: 100%;
 	margin-top: 0.8rem;
-	padding: 1rem 0;
+	padding: 0.8rem 0;
 	background-color: var(--primary-color);
 	color: #fff;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	cursor: pointer;
 	font-weight: 500;
 	animation: button 1s ease infinite alternate;
 }
 
 .button_small {
-	font-size: 1.3rem;
-	font-weight: bold;
+	font-size: 1.2rem;
 	padding: 1.4rem 1rem;
-	width: 140px;
+	width: 180px;
 }
 
-.button:hover, .button_small:hover {
+.button:hover,
+.button_small:hover {
 	background-color: rgba(0, 130, 135, 0.8);
 }
 
@@ -151,6 +151,14 @@
 	.card {
 		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 	}
+	.button_small {
+		background-color: var(--primary-color);
+		color: #fff;
+		font-size: 1rem;
+		cursor: pointer;
+		font-weight: 500;
+		animation: button 1s ease infinite alternate;
+	}
 }
 
 @media (max-width: 1024px) {
@@ -158,13 +166,5 @@
 	.input100 {
 		width: 100%;
 		margin: 0;
-	}
-
-	.submit {
-		margin: 0;
-		font-weight: 400;
-		font-size: 1.2rem;
-		border: 0;
-		cursor: pointer;
 	}
 }
