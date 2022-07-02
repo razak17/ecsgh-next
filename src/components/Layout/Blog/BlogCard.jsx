@@ -4,7 +4,9 @@ import Button from '../../Partials/Button';
 const BlogCard = ({ title, excerpt, date, author }) => {
 	return (
 		<Card>
-			<h2>{title}</h2>
+			<a href='#'>
+				<h2>{title}</h2>
+			</a>
 			<div>
 				<a href='#'>{date}</a>
 				<a href='#'>{author}</a>

@@ -39,38 +39,25 @@
 }
 
 .card h2 {
-	font-size: 2rem;
+	font-size: 1.6rem;
 	font-weight: 500;
 	color: var(--secondary-color);
 }
 
 .card p {
 	padding: 1rem 0;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	color: var(--light-gray);
 }
 
-.card span {
+.card a {
 	font-size: 1rem;
 	color: gray;
 	margin-top: 20px;
 }
 
-.card button {
-	border: none;
-	width: 100%;
-	margin-top: 0.8rem;
-	padding: 10px 0;
-	/* background-color: #008287; */
-	background-color: var(--primary-color);
-	color: white;
-	font-size: 1.2rem;
-	cursor: pointer;
-	animation: button 1s ease infinite alternate;
-}
-
-.card button:hover {
-	background-color: rgba(0, 130, 135, 0.8);
+.card a:hover {
+	color: var(--light-gray);
 }
 
 .card .icon img {
@@ -143,13 +130,13 @@
 }
 
 .button_small {
-	height: 50px;
+	font-size: 1.3rem;
 	font-weight: bold;
 	padding: 1.4rem 1rem;
 	width: 140px;
 }
 
-.button_small:hover {
+.button:hover, .button_small:hover {
 	background-color: rgba(0, 130, 135, 0.8);
 }
 
