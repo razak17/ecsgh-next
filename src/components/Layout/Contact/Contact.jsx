@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import emailjs from '@emailjs/browser';
 import { validateInput } from './Contact.validation';
 
 import Title from '../../Partials/Title';
@@ -9,6 +8,7 @@ import AppWrap from '../../Wrapper/AppWrap';
 import style from './Contact.module.css';
 import ContactInfo from './ContactInfo';
 import InputField from 'components/Partials/InputField';
+import { sendEmail } from 'api';
 
 const Contact = () => {
 	const [ formData, setFormData ] = useState({
@@ -20,7 +20,6 @@ const Contact = () => {
 	});
 	const [ loading, setLoading ] = useState(false);
 
-
 	const handleChangeInput = e => {
 		const { name, value } = e.target;
 		setFormData({ ...formData, [ name ]: value });
@@ -29,42 +28,17 @@ const Contact = () => {
 	const handleSubmit = e => {
 		e.preventDefault();
 
+    console.log(formData);
 		setLoading(true);
-
-		console.log(formData);
-		const { first_name, last_name, email, subject, message } = formData;
-
-		{
-			/* emailjs
-      .send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-        {
-          first_name,
-          last_name,
-          email,
-          subject,
-          message,
-        },
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        res => {
-          setLoading(false);
-          console.log(res.text);
-          setFormData({
-            first_name: '',
-            last_name: '',
-            email: '',
-            subject: '',
-            message: '',
-          });
-        },
-        error => {
-          console.log('Email JS Error', error.text);
-        }
-      ); */
-		}
+		sendEmail(formData);
+		setLoading(false);
+		setFormData({
+			first_name: '',
+			last_name: '',
+			email: '',
+			subject: '',
+			message: '',
+		});
 	};
 
 	return (
