@@ -4,17 +4,16 @@
 	height: 50px;
 	align-items: center;
 	justify-content: center;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	padding: 0px 100px;
 }
 
 .info {
-	font-size: 1.2rem;
 	color: white;
 }
 @media screen and (max-width: 768px) {
 	.info {
-		font-size: 12px;
+		font-size: 0.9rem;
 	}
 }
 
