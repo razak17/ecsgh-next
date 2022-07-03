@@ -19,7 +19,7 @@ const Intro = () => {
 				<div className={style.b1}>
 					<Button
 						onClick={() => window.location.replace('/#contact')}
-						small={true}
+						small="true"
 						label='Get In Touch'
 					/>
 				</div>

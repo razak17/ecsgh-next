@@ -15,12 +15,12 @@ const ContactInfo = () => {
 					<a href='mailto:anyone@example.com'>ecsgh@ecsgh.com</a>
 				</div>
 			</div>
-			<div className='style.info-box'>
+			{/* <div className='style.info-box'>
 				<div className='style.details'>
 					<h4>Phone number</h4>
 					<a href='tel:+19784444444'>+1 978 555 4444</a>
 				</div>
-			</div>
+			</div> */}
 		</div>
 	);
 };
