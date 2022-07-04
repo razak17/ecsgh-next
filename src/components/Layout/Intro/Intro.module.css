@@ -51,6 +51,34 @@
 	padding-top: 40px;
 }
 
+@media (max-width: 1080px) {
+	.t1 {
+		width: 85%;
+	}
+	.desc {
+		width: 65%;
+	}
+	.container {
+		height: 560px;
+	}
+}
+
+@media (max-width: 760px) {
+	.card {
+		padding: 20px 30px;
+	}
+	.b1 {
+		padding-top: 20px;
+	}
+	.t1,
+	.desc {
+		width: 100%;
+	}
+	.container {
+		height: 560px;
+	}
+}
+
 @media screen and (max-width: 480px) {
 	.container {
 		flex-direction: column;
@@ -60,31 +88,11 @@
 		bottom: -50vh;
 	}
 	.card {
-		padding: 20px 50px;
-		justify-content: space-between;
+		padding: 20px 30px;
+		justify-content: center;
 	}
 	.title {
 		font-size: 38px;
-	margin-bottom: 20px;
-	}
-}
-@media (max-width: 768px) {
-	.card {
-		padding: 20px 30px;
-	}
-	.b1 {
-		padding-top: 20px;
-	}
-	.desc {
-		width: 80%;
-	}
-	.t1 {
-		width: 100%;
-	}
-}
-
-@media (max-width: 1024px) {
-	.t1 {
-		width: 85%;
+		margin-bottom: 20px;
 	}
 }
