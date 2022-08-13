@@ -1,6 +1,17 @@
 {
-	"extends": "next/core-web-vitals",
+	"extends": ["next", "next/core-web-vitals", "eslint:recommended", "prettier"],
+	"globals": {
+		"React": "readonly"
+	},
+	"plugins": ["react"],
 	"rules": {
+		"no-unused-vars": [
+			1,
+			{
+				"args": "after-used",
+				"argsIgnorePattern": "^_"
+			}
+		],
 		"max-len": [
 			1,
 			{
@@ -10,8 +21,6 @@
 		"no-shadow": 0,
 		"no-console": 1,
 		"semi": 1,
-		// "array-element-newline": [2, "always"],
-		"array-bracket-spacing": [1, "always"],
 		"object-curly-spacing": [1, "always"],
 		"computed-property-spacing": [1, "always"]
 	}
